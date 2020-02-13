@@ -5,10 +5,13 @@ Repository for Republic Polytechnic (TIPP-Applied AI) Python assignment (2020)
 Machine learning fundamentals assignment - Feb 2020
 
 Dataset URL: 
-- Red Wine => https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv
-- White Wine => https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-white.csv
+- PIMA Indian Diabetes - https://www.kaggle.com/kumargh/pimaindiansdiabetescsv
 
 Datasets:
-- Red Wine => winequality-red.csv
-- White Wine => winequality-white.csv
+- pima-indians-diabetes.csv
+- pima-indians-diabetes.names.txt
 
+Directories:
+- data => contain the datasets and its descriptions
+- model => contains the fitted model and standard scaler files.  They are to be loaded to run the web app.
+- webapp => Flask apps.  1) index.html and 2) webapp.py
