@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pima Indian Diabetes Prediction System</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h4>Pima Indian Diabetes Prediction System</h4>
+            <blockquote>
+                <p>
+                    An example: Glucose=93, BMI=30.4, Age=23, Pregnancies=1
+                </p>
+            </blockquote>
+            <form action="/predict" method="post" id="myform">
+                <div class="form-group">
+                    <label>Glucose:</label>
+                    <input type="number" step=1 class="form-control" id="glucose" placeholder="Enter oral glucose tolerance" name="glucose">
+                </div>
+                <div class="form-group">
+                    <label for="bmi">BMI:</label>
+                    <input type="number" step=any class="form-control" id="bmi" placeholder="Enter body mass index" name="bmi">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" step=1 class="form-control" id="age" placeholder="Enter patient age" name="age">
+                </div>
+                <div class="form-group">
+                    <label for="pregnancies">Pregnancies:</label>
+                    <input type="number" step=1 class="form-control" id="pregnancies" placeholder="Enter number of times pregnant" name="pregnancies">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>                
+                <br>
+            </form>
+            <br>
+            <div class="alert alert-warning" role="alert">
+                {% if prediction_text %}
+                    <p>{{ prediction_text }}</p>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>
