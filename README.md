@@ -15,3 +15,8 @@ Directories:
 - data => contain the datasets and its descriptions
 - model => contains the fitted model and standard scaler files.  They are to be loaded to run the web app.
 - webapp => Flask apps.  1) index.html and 2) webapp.py
+
+Note:
+1. Pima_Indian_Untouch.ipynb - the original version before it was modified to satisfy the assignment requirements.
+2. Pima_Indian.ipynb - the modified version that can run as jupyter notebook or script mode
+3. Pima_India.py - the script mode as mentioned above #2.
