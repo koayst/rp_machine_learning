@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Pima Indian Diabetes Prediction System</title>
+        <title>Pima Indian Diabetes Evaluation System</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -10,10 +10,11 @@
     </head>
     <body>
         <div class="container">
-            <h4>Pima Indian Diabetes Prediction System</h4>
+            <h4>Pima Indian Diabetes Evaluation System</h4>
             <blockquote>
                 <p>
-                    An example: Glucose=93, BMI=30.4, Age=23, Pregnancies=1
+                    <p>Enter Glucose, BMI, Age and Pregnancy count and then click Submit</p>
+                    <p>Hint: Glucode=93, BMI=30.4, Age=23, Pregnancy=1</p>
                 </p>
             </blockquote>
             <form action="/predict" method="post" id="myform">
@@ -30,7 +31,7 @@
                     <input type="number" step=1 class="form-control" id="age" placeholder="Enter patient age" name="age">
                 </div>
                 <div class="form-group">
-                    <label for="pregnancies">Pregnancies:</label>
+                    <label for="pregnancies">Number of Pregnancy:</label>
                     <input type="number" step=1 class="form-control" id="pregnancies" placeholder="Enter number of times pregnant" name="pregnancies">
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>                
