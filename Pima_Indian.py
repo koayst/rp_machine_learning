@@ -28,7 +28,7 @@
 # - **Age:** Age (years)
 # 
 # The last column being the person was diagnosed with diabetes (1) or not (0).
-# - Outcome: Class variable (0 or 1)
+# - **Outcome:** Class variable (0 or 1)
 
 # In[ ]:
 
@@ -56,7 +56,6 @@ import sklearn
 import xgboost
 
 import warnings
-
 from platform import python_version
 
 # for debugging purposes: in case want to know
@@ -74,6 +73,11 @@ from platform import python_version
 # print('sklearn =', sklearn.__version__)
 # print('xgboost =', xgboost.__version__)
 # print()
+
+#change mode to 'jupyter' if running in jupyter notebook
+#change mode to 'script' if running as a python script i.e. .py
+mode = 'script'
+#mode = 'jupyter'
 
 
 # # Load Dataset
@@ -505,10 +509,6 @@ testdata = [
     [93, 30.4, 23, 1],
     [148, 33.6, 50, 6]
 ]
-
-#change mode to 'jupyter' if running in juputer notebook
-mode = 'script'
-        
 
 
 # In[ ]:
